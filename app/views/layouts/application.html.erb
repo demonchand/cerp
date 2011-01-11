@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns = "http://www.w3.org/1999/xhtml" xml:lang = "en" lang = "en">
 <head>
   <title>Cerp</title>
   <%= stylesheet_link_tag :all %>
@@ -8,7 +8,9 @@
 </head>
 <body>
 
-<%= yield %>
-
+        <%= link_to "home", root_url %>
+        <%= link_to "Projects", projects_path %>
+        <%= link_to "Role", roles_path %>
+        <%= yield %>
 </body>
 </html>
