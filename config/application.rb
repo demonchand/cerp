@@ -38,5 +38,6 @@ module Cerp
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+    config.secret_token = 'c2ea9991d8aa548d629e26713a47ecf4f6797b2bef724f4a87631dd3beb76c29a0202f1a7ed8ae1cc3afa20a3cd72b060aad7b80fba986e5cf9a0d1136f17c3f'
   end
 end
