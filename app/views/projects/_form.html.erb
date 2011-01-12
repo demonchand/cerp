@@ -3,10 +3,10 @@
         <%= f.input :name %>
         <%= f.input :description %>
     <% end %>
-    <% f.inputs :name => "users" do %>
-        <%= semantic_fields_for :projects_users do |us|%>
+     <% f.inputs :name => "users" do %>
+        <%= semantic_fields_for :users do |us|%>
             <%= us.inputs do %>
-                <%= us.input :user_id, :label => false, :as => :check_boxes, :collection => User.all %>
+                <%= us.input :email, :as => :check_boxes, :label => false, :collection => User.all %>
             <% end %>
         <% end %>
     <% end %>
