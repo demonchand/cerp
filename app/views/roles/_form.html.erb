@@ -3,4 +3,12 @@
       <%= f.input :name %>
       <%= f.input :description %>
     <% end %>
+    <% f.inputs :name => "users" do %>
+        <%= semantic_fields_for :roles_users do |us|%>
+            <%= us.inputs do %>
+                <%= us.input :user_id, :label => false, :as => :check_boxes, :collection => User.all %>
+            <% end %>
+        <% end %>
+    <% end %>
+    <%= f.buttons %>
 <% end %>
