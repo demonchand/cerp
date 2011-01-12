@@ -5,16 +5,8 @@
         <%= f.input :email %>
         <%= f.input :password %>
         <%= f.input :password_confirmation %>
-    <% end %>
-    <% f.inputs :name => "roles" do %>
-        <%= f.semantic_fields_for :roles do |x|%>
-            <%= x.input :name, :label => false, :as => :check_boxes, :collection => Role.all %>
-        <% end %>
-    <% end %>
-    <% f.inputs :name => "Projects" do %>
-        <%= semantic_fields_for :projects do |pro| %>
-            <%= pro.input :name, :label => false, :as => :check_boxes, :collection => Project.all %>
-        <% end %>
+				<%= f.input :roles, :as => :check_boxes, :label => false, :collection => Role.all %>
+				<%= f.input :projects, :as => :check_boxes, :label => false, :collection => Project.all %>
     <% end %>
     <%= f.buttons %>
 <% end %>

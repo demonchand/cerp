@@ -2,13 +2,7 @@
     <%= f.inputs do %>
       <%= f.input :name %>
       <%= f.input :description %>
+			<%= f.input :users, :as => :check_boxes, :label => false, :collection => User.all %>
     <% end %>
-    <% f.inputs :name => "users" do %>
-        <%= semantic_fields_for :roles_users do |us|%>
-            <%= us.inputs do %>
-                <%= us.input :user_id, :label => false, :as => :check_boxes, :collection => User.all %>
-            <% end %>
-        <% end %>
-    <% end %>
-    <%= f.buttons %>
+		<%= f.buttons %>
 <% end %>

@@ -7,16 +7,11 @@
         <%= f.input :password_confirmation %>
         <%= f.input :current_password %>
     <% end %>
-    <% f.inputs :name => "roles" do %>
-        <%= f.semantic_fields_for :roles do |x|%>
-            <%= x.input :name, :label => false, :as => :check_boxes, :collection => Role.all %>
-        <% end %>
-    <% end %>
-    <% f.inputs :name => "Projects" do %>
-        <%= semantic_fields_for :projects do |pro| %>
-            <%= pro.input :name, :label => false, :as => :check_boxes, :collection => Project.all %>
-        <% end %>
-    <% end %>
+		<% f.inputs :name => "roles" do %>
+				<%= semantic_fields_for :roles  do |ro| %>
+						<%= ro.input :roles, :as => :check_boxes, :label => false, :collection => Role.all %>
+				<% end %>
+		<% end %>
     <%= f.buttons %>
 <% end %>
 
