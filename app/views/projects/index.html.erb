@@ -13,11 +13,9 @@
   <tr>
     <td><%= project.name %></td>
     <td><%= project.description %></td>
-    <% if can? :read, @projects %>
-        <td><%= link_to 'Show', project %></td>
-    <% end %>
     <% if can? :update, @projects %>
-        <td><%= link_to 'Edit', edit_project_path(project) %></td>
+    <td><%= link_to 'Show', project %></td>
+    <td><%= link_to 'Edit', edit_project_path(project) %></td>
     <% end %>
     <% if can? :destroy, @projects %>
         <td><%= link_to 'Destroy', project, :confirm => 'Are you sure?', :method => :delete %></td>
