@@ -1,0 +1,35 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  acid: MyString
+  given_names: MyString
+  father_last_name: MyString
+  mother_last_name: MyString
+  street: MyString
+  exterior_number: MyString
+  interior_number: MyString
+  colony: MyString
+  city: MyString
+  state: MyString
+  country: MyString
+  zip_code: MyString
+  cell_phone: MyString
+  id_number: MyString
+  occupation: MyString
+
+two:
+  acid: MyString
+  given_names: MyString
+  father_last_name: MyString
+  mother_last_name: MyString
+  street: MyString
+  exterior_number: MyString
+  interior_number: MyString
+  colony: MyString
+  city: MyString
+  state: MyString
+  country: MyString
+  zip_code: MyString
+  cell_phone: MyString
+  id_number: MyString
+  occupation: MyString

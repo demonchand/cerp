@@ -1,4 +1,6 @@
 Cerp::Application.routes.draw do
+  resources :customers
+
   resources :projects
 
   resources :roles
