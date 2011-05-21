@@ -1,0 +1,86 @@
+body{
+  font: 14px/24px Helvetica, Arial, sans-serif;
+
+}
+
+input:focus {
+
+  border-color:#666;
+  -moz-box-shadow: 0 0 5px #06f;
+  -webkit-box-shadow: 0 0 5px #06f;
+  box-shadow:0 0 5px #06f;
+}
+input[type=submit]:focus, input[type=button]:focus{
+
+  border-color:none;
+  -moz-box-shadow: 0 0 0px #06f;
+  -webkit-box-shadow: 0 0 0px #06f;
+  box-shadow:0 0 0px #06f;
+
+}
+
+input[type=submit], input[type=button]{
+  background:#5e5e5e;
+  background: -moz-linear-gradient(top,#a3a5a3, #5e5e5e);
+  background: -webkit-gradient(linear, left top, left bottom, from(#a3a5a3), to(#5e5e5e));
+  color:#FFF;
+  border:1px solid #585958; 
+  cursor:pointer;
+  height:25px;
+  padding:0px 5px !important;
+/*-moz-border-radius:.2em;*/
+}
+#container{
+ 
+  width:1200px;
+  margin:10px auto;
+}
+#wrapper{
+ 
+  width:1220px;
+  margin:20px auto;
+  padding:10px;
+  -moz-box-shadow:0 0 3px 3px #ccc;
+  -webkit-box-shadow: 0 0 3px 3px #888;
+  box-shadow: 0 0 3px 3px #888;
+}
+
+.apple{border:1px solid red}
+h1, h2{margin-top:20px;font-size:1.5em}
+
+header.logo-nav{
+ 
+}
+header.logo-nav img{
+  padding-right:10px;
+}
+span.msg{
+  color:#000;
+  float:right;
+}
+span.msg em{
+color:#888;
+}
+
+.user-nav{
+  float:right;
+}
+nav.user-nav a{
+  text-decoration:none;
+  padding-right:5px;  
+}
+.user-nav a:hover{
+  text-decoration:underline;
+}
+table{
+  border-collapse:collapse;
+  
+}
+table, th, td{
+  border:1px solid #c3c3c3;
+}
+table td, th{
+  font-size:12px;
+}
+
+
